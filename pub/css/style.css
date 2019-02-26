@@ -1,0 +1,47 @@
+html, body, .container {
+	height: 100%;
+}
+
+#header {
+	height: 50px;
+	padding: 10px 0;
+}
+
+#calendar {
+	height: calc(100% - 82px);
+	padding: 0;
+}
+
+#calendar table {
+	width: 100%;
+	height: 100%;
+	table-layout: fixed;
+}
+
+#calendar th {
+	height: 22px;
+	width: calc(100% / 7);
+	padding: 2px;
+	border-bottom: 2px solid #000;
+	text-align: center;
+}
+
+#calendar td {
+	height: calc(100% / 6);
+	width: calc(100% / 7);
+	border: 1px dotted #999;
+	text-align: right;
+	vertical-align: top;
+}
+
+#calendar .has-event {
+	background-color: #66FF99;
+}
+
+#calendar .adjacent-month {
+	color: #999;
+}
+
+#details {
+	width: 100%;
+}
